@@ -27,7 +27,7 @@ const { post } = defineProps({
             </div>
 
             <div>
-                <Link href="route('post.index')">戻る</Link>
+                <Link :href="route('post.index')">戻る</Link>
             </div>
         </div>
     </Authenticated>
