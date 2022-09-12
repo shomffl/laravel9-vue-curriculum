@@ -26,8 +26,9 @@ const { post } = defineProps({
                 <p>{{ post.body }}</p>
             </div>
 
-            <div>
+            <div class="space-x-3">
                 <Link :href="route('post.index')">戻る</Link>
+                <Link :href="route('post.edit', { id: post.id })">Edit</Link>
             </div>
         </div>
     </Authenticated>
