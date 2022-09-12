@@ -42,4 +42,9 @@ class PostController extends Controller
         $post->fill($input)->save();
         return Redirect::route('post.show' ,$post->id);
     }
+
+    public function delete(Post $post){
+        $post->delete();
+        return Redirect::route('post.index');
+    }
 }
