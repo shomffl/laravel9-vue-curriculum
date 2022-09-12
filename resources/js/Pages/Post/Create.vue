@@ -28,6 +28,9 @@ const form = useForm({
                         id="title"
                         class="w-full"
                     />
+                    <div class="text-red-700" v-if="form.errors.title">
+                        {{ form.errors.title }}
+                    </div>
                 </div>
                 <!-- body -->
                 <div class="m-5">
@@ -38,6 +41,9 @@ const form = useForm({
                         id="body"
                         class="w-full"
                     />
+                    <div class="text-red-700" v-if="form.errors.body">
+                        {{ form.errors.body }}
+                    </div>
                 </div>
 
                 <!-- submit -->
